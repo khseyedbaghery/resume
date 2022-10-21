@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background: rgba(0, 0, 0, 0.06); */
+  /* background: #4ca1af; */
+  background: linear-gradient(to right, #7ed0df, #c4e0e5);
+
+ /* background: linear-gradient(to right, #e4bf5a, #fceabb); */
+
+}
+
+.my-navbar {
+  background: gray;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  top: -50%;
+  /* display: none; */
+  transition: top 1s;
+}
+
+.my-navbar .my-list-navbar{
+  cursor: pointer;
+  /* transition: 2s; */
+}
+
+.my-navbar img {
+  width: 60px;
+  height: 60px;
+  background: #000;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.my-navbar .nav-link:hover {
+  font-weight: bold;
+}
+
+.my-navbar .name {
+  font-size: 18px;
+  color: #000;
+}
+
+.my-navbar .navbar-nav {
+  height: 88px;
+}
+
+.my-navbar .social-media .fa {
+  font-size: 20px;
+}
+
+.my-navbar .social-media .fa:hover {
+  font-size: 22px;
+}
+
+.personal-information {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.personal-information .background-image {
+  background: url("../image/2.jpg") no-repeat center;
+  background-size: cover;
+  height: 300px;
+}
+
+.personal-information .profile-image {
+  width: 200px;
+  height: 200px;
+  background: #000;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  top: 150px;
+  left: 40px;
+}
+
+.personal-information .my-info {
+  padding-top: 60px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.personal-information .my-info .my-info-univer {
+  width: 300px;
+}
+
+.personal-information .my-info .my-info-univer div {
+  cursor: pointer;
+}
+
+.personal-information #polytechnic {
+  width: 50px;
+  height: 50px;
+  background: none;
+  border-radius: 50%;
+}
+
+.personal-information .my-info-univer .fa-bell , 
+.personal-information .my-info-univer .fa-bell-slash{
+  position: relative;
+  left: 200px;
+  bottom: 30px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.personal-information .open-work {
+  width: 300px;
+  background: rgba(179, 172, 172, 0.725);
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-top: 15px;
+  margin-left: 35px;
+}
+
+.personal-information .open-work .fa-pencil {
+  position: relative;
+  bottom: 55px;
+  left: 255px;
+}
+
+.education-information {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 35px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.education-information .education-title {
+  font-size: 21px;
+}
+
+.education-information .education-title .hat {
+width: 45px;
+/* height: 25px; */
+}
+
+.education-information .master,
+.education-information .bachelor {
+  cursor: pointer;
+}
+
+.education-information .master h5,
+.education-information .bachelor h5 {
+  font-size: 24px;
+}
+
+.skills {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 35px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.skills .demonstrate {
+  border-radius: 25px;
+}
+
+/* .skills .plus {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.skills .fa-pencil {
+  font-size: 25px;
+  cursor: pointer;
+} */
+
+.skills .bulb{
+  width: 50px;
+}
+
+.skills .skill-item .fa-pencil {
+  font-size: 20px;
+}
+
+.skills .skill-item:hover {
+  color: red;
+  transition: 0.4s;
+  font-weight: bold;
+}
+
+.skills .show-more,
+.projects .show-more {
+  height: 0;
+  overflow: hidden;
+}
+
+.skills .show-more.active {
+  animation: slide 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  from {
+    height: 0;
+  }
+  to {
+    height: 343px;
+  }
+}
+
+.skills .show-more.deactive {
+  animation: sloideout 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sloideout {
+  from {
+    height: 343px;
+  }
+  to {
+    height: 0;
+  }
+}
+
+.projects {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 35px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.projects #project-plan{
+  width: 50px;
+}
+
+.projects .show-more.active {
+  animation: slide2 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide2 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 250px;
+  }
+}
+
+.projects .show-more.deactive {
+  animation: sloideout2 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sloideout2 {
+  from {
+    height: 250px;
+  }
+  to {
+    height: 0;
+  }
+}
